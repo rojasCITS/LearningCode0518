@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --ff: "Outfit", sans-serif;
+      --fs-p: 15px;
+      --fw-400: 400;
+      --fw-700: 700;
+
+      --Slate300: hsl(212, 45%, 89%);
+      --Slate500: hsl(216, 15%, 48%);
+      --Slate900: hsl(218, 44%, 22%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+    body{
+      font-family: var(--ff);
+      background-color: var(--Slate300);
+      display: block;
+      
+    }
+
+    
+    .container {
+      height: 90vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      margin: 0 auto;
+    }
+    .card {
+      width: 320px;
+      height: 499px;
+      padding-left: 16px;
+      padding-top: 16px;
+      padding-bottom: 40px;
+      padding-right: 16px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+   .qrcode-image img{
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+   }
+
+   .info {
+    margin-top: 1.4rem;
+   }
+
+   .info h2{
+    margin-bottom: 1rem;
+    color: var(--Slate900);
+     }
+
+   .info p{
+       color: var(--Slate500);
+       padding: 0 2rem;
+     }
+
+    p {
+      font-size: var(--fs-p);
+    }
+
+    .attribution { 
+         padding: 0 1.25rem;
+      text-align: center; }
+
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="card">
+
+    <div class="qrcode-image">
+    <img src="/images/image-qr-code.png" alt="QR code image">
+    </div>
+
+    <div class="info">
+    <h2>Improve your front-end skills by building projects</h3>
+
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+
+
+  </div>
+
+</div>
+        <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Carmen Rojas</a>.
+    </div>
+</body>
+</html>
